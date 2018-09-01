@@ -8,7 +8,7 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "build:bundle": "ng build --project lazy-element --prod --output-hashing none",
+    "build:bundle": "ng build --project lazy-element --output-hashing none",
     "copy:bundle": "cpr dist/lazy-element/main.js src/assets/lazy-element.bundle.js -o",
     "build-and-copy": "npm run build:bundle && npm run copy:bundle"
   },
@@ -27,6 +27,7 @@
     "application": "^0.1.4",
     "core-js": "^2.5.4",
     "install": "^0.12.1",
+    "lodash": "^4.17.10",
     "npm": "^6.4.1",
     "rxjs": "^6.0.0",
     "zone.js": "^0.8.26"
@@ -39,6 +40,7 @@
     "@angular/language-service": "^6.0.3",
     "@types/jasmine": "~2.8.6",
     "@types/jasminewd2": "~2.0.3",
+    "@types/lodash": "^4.14.116",
     "@types/node": "~8.9.4",
     "codelyzer": "~4.2.1",
     "cpr": "^3.0.1",

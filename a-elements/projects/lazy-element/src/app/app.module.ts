@@ -16,6 +16,9 @@ import { AppComponent } from './app.component';
 })
 export class AppModule {
   constructor(private injector: Injector) {
+  }
+
+  ngDoBootstrap() {
     const tileCE = createCustomElement(AppComponent, { injector: this.injector });
     customElements.define('lazy-element', tileCE);
   }

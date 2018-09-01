@@ -11,7 +11,9 @@ export class AppComponent {
   }
   add(tileKind: string): void {
     const tile = document.createElement(tileKind);
-    document.body.appendChild(tile);
+    tile.setAttribute('from', 'sdfsdfsf');
+    const content = document.getElementById('container');
+    content.appendChild(tile);
   }
 
   public load() {
